@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>omegat</id>
-    <version>4.3.2</version>
+    <version>5.2.0-beta</version>
     <owners>Briac Pilpré</owners>
     <title>OmegaT (Install)</title>
     <authors>Aaron Madlon-Kay, Briac Pilpré, Didier Briel</authors>
@@ -19,27 +19,53 @@
     <summary>OmegaT is a free translation memory application intended for professional translators</summary>
     <description>OmegaT is a free translation memory application that works on Windows, macOS, Linux... It is a tool intended for professional translators. It does not translate for you! (Software that does this is called "machine translation", and you will have to look elsewhere for it.)
 </description>
-    <releaseNotes>----------------------------------------------------------------------
- OmegaT 4.3.2 (2020-01-26)
+    <releaseNotes><![CDATA[----------------------------------------------------------------------
+ OmegaT 5.2.0 (2020-01-26)
 ----------------------------------------------------------------------
-  0 Enhancements
-  1 Bug fix
-  2 Localisation updates
+  3 Enhancements
+  5 Bug fixes
+  7 Localisation updates
 ----------------------------------------------------------------------
-4.3.2 vs 4.3.1
+5.2.0 vs 5.1.0
+
+  Implemented requests:
+
+  - Support TMX "tuid" attribute for alternative translation matching
+  https://sourceforge.net/p/omegat/feature-requests/1474/
+
+  - Include "alternative" translation ID as TMX "tuid" attribute in exported TMX
+  https://sourceforge.net/p/omegat/feature-requests/1475/
+
+  - Handle TMX `x` attribute on <it>, <ph> tags
+  https://sourceforge.net/p/omegat/feature-requests/1482/
 
   Bug fixes:
 
-  - Context menu not popping up in repeated segments
-  https://sourceforge.net/p/omegat/bugs/917/
+  - LanguageTool rule settings not persisted correctly
+  https://sourceforge.net/p/omegat/bugs/960/
 
-  Localisation updates
+  - Parsing bug in Moodle filter when string contains ";"
+  https://sourceforge.net/p/omegat/bugs/962/
 
-  - Finnish localisation added at 4.3.2 (UI, Instant Start, scripts, readme,
-    documentation)
-  - Simplified Chinese localisation updated to 4.3.2 (UI, Instant Start,
-    scripts, readme, documentation)
-</releaseNotes>
+  - Some exclusion rule edits don't take effect when closing window
+  https://sourceforge.net/p/omegat/bugs/966/
+
+  - MyMemory Machine Translation Displays Apostrophes as HTML Code
+  https://sourceforge.net/p/omegat/bugs/972/
+
+  - Zero-indexed tags in level 2 TMX are not handled correctly
+  https://sourceforge.net/p/omegat/bugs/974/
+
+  Localisation Updates:
+
+  - Brazilian Portuguese localisation updated to 5.2.0 (UI)
+  - Dutch localisation updated to 5.2.0 (readme, documentation)
+  - Finnish localisation added at 5.2.0 (UI, Instant Start, scripts, readme, documentation)
+  - French localisation updated to 5.2.0 (UI)
+  - Italian localisation updated to 5.2.0 (readme, documentation)
+  - Simplified Chinese localisation updated to 5.0.0 (UI, readme, documentation)
+  - Turkmen localisation updated to 5.2.0 (UI)
+]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
