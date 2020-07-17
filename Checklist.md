@@ -20,5 +20,5 @@ checksum -t sha256 OmegaT_5.2.0_Beta_Window_64_Signed.exe
 * Edit `tools/chocolateyinstall.ps1` and change `$version`, `checksum` and `checksum64`.
 
 * `choco pack`
-* `choco install -s .`
-
+* `choco install -s . omegat`
+* `choco push omegat.4.3.2.nupkg -s https://push.chocolatey.org/`
