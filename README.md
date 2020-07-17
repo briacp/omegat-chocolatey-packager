@@ -1,3 +1,6 @@
+# OmegaT Chocolatey Packager
+
+## Packaging Standard and Latest versions
 
 * Grab the install files to calculate the checksums
   * Standard
@@ -17,8 +20,11 @@ checksum -t sha256 OmegaT_5.2.0_Beta_Window_64_Signed.exe
 ```
 
 * Edit `<version>` (adding the `-beta` suffix for the latest version) and `<releaseNotes>` in `omegat-[latest|standard].nuspec`.
+
 * Edit `tools/chocolateyInstall-[latest|standard].ps1` and change `$version`, `checksum` and `checksum64`.
 
 * `choco pack omegat-[latest|standard].nuspec`
-* `choco install -s . omegat`
-* `choco push omegat.4.3.2.nupkg -s https://push.chocolatey.org/`
+
+* `choco install -s . omegat` (to check the installation is working fine)
+
+* `choco push omegat.[version].nupkg -s https://push.chocolatey.org/`
