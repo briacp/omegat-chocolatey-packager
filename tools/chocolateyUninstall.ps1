@@ -1,9 +1,11 @@
-﻿$packageName = 'omegat'
+﻿$packageName = "omegat"
+$installerType = "exe"
 
-if ( test-path "C:\Program Files (x86)" ) {
-	$unpath = "C:\Program Files (x86)\OmegaT\unins000.exe"
-} else {
-	$unpath = "C:\Program Files\OmegaT\unins000.exe"
+# Uninstall $packageName if older version is installed
+if (Test-Path "$env:ProgramFiles\$packageName") {
+    Uninstall-ChocolateyPackage $packageName $installerType "/VERYSILENT /NORESTART" "$env:ProgramFiles\$packageName\unins000.exe"
 }
 
-Uninstall-ChocolateyPackage $packageName 'exe' '/VERYSILENT' "$unpath" -validExitCodes @(0)
+if (Test-Path "${env:ProgramFiles(x86)}\$packageName") {
+    Uninstall-ChocolateyPackage $packageName $installerType "/VERYSILENT /NORESTART" "${env:ProgramFiles(x86)}\$packageName\unins000.exe"
+}
