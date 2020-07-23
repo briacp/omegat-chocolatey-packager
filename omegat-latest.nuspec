@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>omegat</id>
-    <version>5.2.0-beta</version>
+    <version>5.2.0-beta3</version>
     <owners>Briac Pilpré</owners>
     <title>OmegaT (Install)</title>
     <authors>Aaron Madlon-Kay, OmegaT Developers</authors>
