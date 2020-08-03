@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$version    = "5.2.0"
+$version    = "5.3.0"
 $url        = "https://downloads.sourceforge.net/project/omegat/OmegaT%20-%20Latest/OmegaT%20${version}/OmegaT_${version}_Beta_Windows_Signed.exe"
 $url64      = "https://downloads.sourceforge.net/project/omegat/OmegaT%20-%20Latest/OmegaT%20${version}/OmegaT_${version}_Beta_Windows_64_Signed.exe"
 
@@ -15,9 +15,9 @@ $packageArgs = @{
   silentArgs    = '/VERYSILENT'
   validExitCodes = @(0)
 
-  checksum      = 'D5A3B5031FA9FD6FC61B0A44DCA3070DCE5E946D2CF773C3F52A193309872103'
+  checksum      = 'D5682962C6BA696ECE28A6A9CD2C2083532EB2691F871C5BE075B25C26290419'
   checksumType  = 'sha256'
-  checksum64    = '3B739753D3E0BF1AE0B84CFF9238359028812458B846762F03B91794F6DD2CB3'
+  checksum64    = '94DE84089F3AFCCBE4E0029468A0C58756FDCC985C989337F31F3FABFC3460B7'
   checksumType64= 'sha256'
 }
 
