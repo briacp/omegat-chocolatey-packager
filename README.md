@@ -25,6 +25,6 @@ checksum -t sha256 OmegaT_5.2.0_Beta_Windows_64_Signed.exe
 
 * `choco pack omegat-[latest|standard].nuspec`
 
-* `choco install -s . omegat` (to check the installation is working fine)
+* `choco install --pre --source=. --version=[version] omegat` (to check the installation is working fine)
 
 * `choco push omegat.[version].nupkg -s https://push.chocolatey.org/`
