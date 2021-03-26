@@ -20,6 +20,7 @@ checksum -t sha256 OmegaT_5.2.0_Beta_Windows_64_Signed.exe
 ```
 
 * Edit `<version>` (adding the `-beta` suffix for the latest version) and `<releaseNotes>` in `omegat-[latest|standard].nuspec`.
+* Add the changelog from `https://github.com/omegat-org/omegat/blob/master/release/changes.txt` in `omegat-[latest|standard].nuspec`.
 
 * Edit `tools/chocolateyInstall-[latest|standard].ps1` and change `$version`, `checksum` and `checksum64`.
 
