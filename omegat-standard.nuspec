@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>omegat</id>
-    <version>4.3.2</version>
-    <owners>Briac Pilpré</owners>
+    <version>@VERSION@</version>
+    <owners>Briac Pilpr&#233;</owners>
     <title>OmegaT (Install)</title>
     <authors>Aaron Madlon-Kay, OmegaT Developers</authors>
     <projectUrl>http://www.omegat.org/</projectUrl>
@@ -20,27 +20,7 @@
     <summary>OmegaT is a free translation memory application intended for professional translators</summary>
     <description>OmegaT is a free translation memory application that works on Windows, macOS, Linux... It is a tool intended for professional translators. It does not translate for you! (Software that does this is called "machine translation", and you will have to look elsewhere for it.)
 </description>
-    <releaseNotes>----------------------------------------------------------------------
- OmegaT 4.3.2 (2020-01-26)
-----------------------------------------------------------------------
-  0 Enhancements
-  1 Bug fix
-  2 Localisation updates
-----------------------------------------------------------------------
-4.3.2 vs 4.3.1
-
-  Bug fixes:
-
-  - Context menu not popping up in repeated segments
-  https://sourceforge.net/p/omegat/bugs/917/
-
-  Localisation updates
-
-  - Finnish localisation added at 4.3.2 (UI, Instant Start, scripts, readme,
-    documentation)
-  - Simplified Chinese localisation updated to 4.3.2 (UI, Instant Start,
-    scripts, readme, documentation)
-</releaseNotes>
+    <releaseNotes><![CDATA[@CHANGELOG@]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\chocolateyInstall-standard.ps1" target="tools\chocolateyInstall.ps1" />
