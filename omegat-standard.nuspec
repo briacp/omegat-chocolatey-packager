@@ -7,7 +7,7 @@
     <title>OmegaT (Install)</title>
     <authors>Aaron Madlon-Kay, OmegaT Developers</authors>
     <projectUrl>http://www.omegat.org/</projectUrl>
-    <iconUrl>https://avatars2.githubusercontent.com/u/6554408?s=128&amp;name=omegat.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/omegat-org/omegat/f3b2dae03d854b4dd9de726178a3088c79f66f25/images/OmegaT.iconset/icon_128x128.png</iconUrl>
     <copyright>Copyright (C) 2000-2020 OmegaT Project</copyright>
     <licenseUrl>https://sourceforge.net/p/omegat/code/ci/master/tree/release/OmegaT-license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
